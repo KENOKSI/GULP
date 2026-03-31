@@ -3,3 +3,5 @@ import replace from "gulp-replace"; // Пои
 export const plugins = {
     replace: replace,
 }
+
+////Здесь мы подключаем все необходимые плагины для работы
