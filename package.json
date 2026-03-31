@@ -1,0 +1,21 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "oleg",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "del": "^8.0.1",
+    "gulp": "^5.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-version-number": "^0.2.4",
+    "gulp-webp": "^5.1.0",
+    "gulp-webp-html-nosvg": "^1.1.1"
+  }
+}
