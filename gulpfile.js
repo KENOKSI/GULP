@@ -13,13 +13,16 @@ import { reset } from './gulp/config/tasks/reset.js';
 import { html } from './gulp/config/tasks/html.js';
 import { images } from './gulp/config/tasks/images.js';
 import {server} from './gulp/tasks/server.js'
+import { scss } from './gulp/config/tasks/scss.js';
+import
 
 function watcher(){
     gulp.watch(app.path.watch.files, copy);
     gulp.watch(app.path.watch.html, html);
     gulp.watch(app.path.watch.img, images);
+     gulp.watch(app.path.watch.scss, scss);
 }
-const mainTasks = gulp.parallel(copy, html, images);
+const mainTasks = gulp.parallel(copy, html, images,scss);
 
 const dev = gulp.series(reset,mainTasks,  gulp.parallel(watcher , server));
 
