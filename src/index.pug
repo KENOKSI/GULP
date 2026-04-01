@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -10,8 +10,11 @@ html
     include html/header.pug
     
     main.page
-    block.block
+      .block
+      picture
+        source(srcset="@img/h.webp", type="image/webp")
+        img(src="https://picsum.photos/400/300", alt="Тест")
       h1 Hello worla! Facilis voluptatem hic numquam nesciunt quib
-    include html/footer.pug
+      include html/footer.pug
     
     script(src="js/app.min.js")
