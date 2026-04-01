@@ -1,28 +1,28 @@
 import * as nodePath from 'path';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-
-
 const buildFolder = './dist';
 const srcFolder = './src';
 
- export const path = {
-    build:{
+export const path = {
+    build: {
         js: `${buildFolder}/js/`,
         css: `${buildFolder}/css/`,
+        fonts: `${buildFolder}/fonts/`,
         html: `${buildFolder}/`,
         files: `${buildFolder}/files/`,
-        img: `${buildFolder}/img/`,
+        img: `${buildFolder}/img/`,      // ← важно: img
     },
-    src:{
+    src: {
         js: `${srcFolder}/js/app.js`,
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/*.pug`,
+        html: `${srcFolder}/*.pug`,       // или *.pug
         files: `${srcFolder}/files/**/*.*`,
-        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
+        fonts: `${srcFolder}/fonts/**/*.*`,
+        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,  // ← важно
         svg: `${srcFolder}/img/**/*.svg`,
     },
-    watch:{
+    watch: {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.pug`,
@@ -30,11 +30,8 @@ const srcFolder = './src';
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
     },
     clean: buildFolder,
-    buildFolder:buildFolder,
-srcFolder:srcFolder,
-rootFolder:rootFolder,
-srcFolder:srcFolder,
-ftp:'' 
-
-
+    buildFolder: buildFolder,
+    srcFolder: srcFolder,
+    rootFolder: rootFolder,
+    ftp: ''
 }
