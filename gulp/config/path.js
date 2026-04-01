@@ -27,7 +27,7 @@ export const path = {
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.pug`,
         files: `${srcFolder}/files/**/*.*`,
-        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
+        img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     },
     clean: buildFolder,
     buildFolder: buildFolder,
