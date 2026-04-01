@@ -13,12 +13,12 @@ const srcFolder = './src';
         img: `${buildFolder}/img/`,
     },
     src:{
-        html: `${srcFolder}/*.html`,
+        html: `${srcFolder}/*.pug`,
         files: `${srcFolder}/files/**/*.*`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
     },
     watch:{
-        html: `${srcFolder}/**/*.html`,
+        html: `${srcFolder}/**/*.pug`,
         files: `${srcFolder}/files/**/*.*`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,svg}`,
     },

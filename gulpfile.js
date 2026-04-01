@@ -12,6 +12,7 @@ import { copy } from './gulp/config/tasks/copy.js';
 import { reset } from './gulp/config/tasks/reset.js';
 import { html } from './gulp/config/tasks/html.js';
 import { images } from './gulp/config/tasks/images.js';
+import {server} from './gulp/tasks/server.js'
 
 function watcher(){
     gulp.watch(app.path.watch.files, copy);
@@ -20,7 +21,7 @@ function watcher(){
 }
 const mainTasks = gulp.parallel(copy, html, images);
 
-const dev = gulp.series(reset,mainTasks,  watcher);
+const dev = gulp.series(reset,mainTasks,  gulp.parallel(watcher , server));
 
 
 gulp.task('default', dev);
