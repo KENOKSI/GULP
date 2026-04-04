@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 40px 0;
+}

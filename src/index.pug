@@ -3,18 +3,17 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Мой проект
+    title Новый проект
     link(rel="stylesheet", href="css/style.min.css")
   
   body
-    include html/header.pug
+    include ../html/header.pug
     
     main.page
-      .block
-      picture
-        source(srcset="@img/h.webp", type="image/webp")
-        img(src="img/photo_2026-03-31_22-44-20.jpg", alt="Image 1")
-      h1 Hello worla! Facilis voluptatem hic numquam nesciunt quib
-      include html/footer.pug
+      .container
+        h1 Заголовок
+        p Текст...
+    
+    include ../html/footer.pug
     
     script(src="js/app.min.js")

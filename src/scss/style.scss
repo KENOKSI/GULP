@@ -1,13 +1,15 @@
-body{
-   background-image: src('../img/fgfg.jpg');
-    span{
-        color: white;
-    }
-}
+// Вместо @import пишите @use
 
-.block{
-    display: flex;
-    justify-content: center;
-   
-    
-}
+@use 'basic/reset';
+@use 'basic/fonts';
+@use 'basic/vars';
+@use 'basic/global';
+
+@use 'components/btn';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/cards';
+
+@use 'pages/home/hero';
+@use 'pages/home/about';
+@use 'pages/home/skills';

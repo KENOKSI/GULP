@@ -23,4 +23,7 @@ export const images = () => {
         }))
         .pipe(app.gulp.dest(app.path.build.img))
         .pipe(app.plugins.browsersync.stream());
+
+  
 }
+
